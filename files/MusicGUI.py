@@ -4,10 +4,14 @@
 
 
 import tkinter as tk
+import Backend
+
 
 if __name__ == '__main__':
     wn = tk.Tk()
     wn.title("Fapple FiPod")
+
+    songs = Backend.create_songs()
 
     library = tk.LabelFrame(wn, text="Library", padx=5, pady=5)
     library.pack(fill="both", expand="yes", padx=5, pady=5)
@@ -16,10 +20,8 @@ if __name__ == '__main__':
     scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 
     music_listbox = tk.Listbox(library, width=25, yscrollcommand=scrollbar.set)
-    music_listbox.insert(1, 'Python')
-    music_listbox.insert(2, 'Java')
-    music_listbox.insert(3, 'C++')
-    music_listbox.insert(4, 'Any other')
+    for i in range(len(songs)):
+        music_listbox.insert(i, songs[i].get_song_name())
     music_listbox.pack()
 
     btn_start = tk.Button(library, text='Start', width=25, command=wn.destroy)
