@@ -25,6 +25,13 @@ def create_songs():
     indie1 = Songs.Songs("Tokyo", "e s c p", "Indie Pop", "songs/indie1.mp3")
     indie2 = Songs.Songs("Steps On Clouds", "e s c p", "Indie Pop", "songs/indie2.mp3")
     pop1 = Songs.Songs("Popsicle", "Johny Grimes", "Pop", "songs/pop1.mp3")
+    rock1 = Songs.Songs("Let's Rock", "Alex=Productions", "Rock", "songs/rock1.mp3")
+    rock2 = Songs.Songs("Banger", "Alexander Nakarada", "Rock", "songs/rock2.mp3")
+    lofi1 = Songs.Songs("Downtown Walk", "e s c p", "LoFi", "songs/lofi1.mp3")
+    lofi2 = Songs.Songs("Lunar New Year", "Alex-Productions", "LoFi", "songs/lofi2.mp3")
+    lofi3 = Songs.Songs("Rain, Book And Cup Of Tea", "e s c p", "LoFi", "songs/lofi3.mp3")
+    lofi4 = Songs.Songs("Small Town Boy", "e s c p", "LoFi", "songs/lofi4.mp3")
+
 
     # add all the classical songs to song list
     songs.append(classical1)
@@ -44,6 +51,16 @@ def create_songs():
 
     # add all the pop songs to the song list
     songs.append(pop1)
+
+    # add all the rock songs to the song list
+    songs.append(rock1)
+    songs.append(rock2)
+
+    # add all the LoFi songs to the song list
+    songs.append(lofi1)
+    songs.append(lofi2)
+    songs.append(lofi3)
+    songs.append(lofi4)
 
     return songs
 
