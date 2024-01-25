@@ -1,5 +1,10 @@
 """
+@author abbybrown
+@filename Backend.py
+@date 01/24/24
 
+    This backend allows for the creation of all of our songs and returning these song objects in a list. We also have a
+    method that allows the user to search and retrieve a specific song from the list.
 """
 import Songs
 
@@ -9,17 +14,17 @@ def create_songs():
     songs = []
 
     # create all the song objects
-    classical1 = Songs.Songs("Winter", "Alex-Productions", "Classical", "classical1.mp3")
-    classical2 = Songs.Songs("Family", "Alex-Productions", "Classical", "classical2.mp3")
-    classical3 = Songs.Songs("The Silent Witness", "Justin Allan Arnold", "Classical", "classical3.mp3")
-    country1 = Songs.Songs("Acoustic Folk Background Guitar", "Alex-Productions", "Country", "country1.mp3")
-    country2 = Songs.Songs("Friends Forever", "FSM Team", "Country", "country2.mp3")
-    country3 = Songs.Songs("New Lands", "Alex-Productions", "Country", "country3.mp3")
-    country4 = Songs.Songs("Banjo Fever", "Alexander Nakarada", "Country", "country4.mp3")
-    country5 = Songs.Songs("Happy", "Alexander Nakarada", "Country", "country5.mp3")
-    indie1 = Songs.Songs("Tokyo", "e s c p", "Indie Pop", "indie1.mp3")
-    indie2 = Songs.Songs("Steps On Clouds", "e s c p", "Indie Pop", "indie2.mp3")
-    pop1 = Songs.Songs("Popsicle", "Johny Grimes", "Pop", "pop1.mp3")
+    classical1 = Songs.Songs("Winter", "Alex-Productions", "Classical", "songs/classical1.mp3")
+    classical2 = Songs.Songs("Family", "Alex-Productions", "Classical", "songs/classical2.mp3")
+    classical3 = Songs.Songs("The Silent Witness", "Justin Allan Arnold", "Classical", "songs/classical3.mp3")
+    country1 = Songs.Songs("Acoustic Folk Background Guitar", "Alex-Productions", "Country", "songs/country1.mp3")
+    country2 = Songs.Songs("Friends Forever", "FSM Team", "Country", "songs/country2.mp3")
+    country3 = Songs.Songs("New Lands", "Alex-Productions", "Country", "songs/country3.mp3")
+    country4 = Songs.Songs("Banjo Fever", "Alexander Nakarada", "Country", "songs/country4.mp3")
+    country5 = Songs.Songs("Happy", "Alexander Nakarada", "Country", "songs/country5.mp3")
+    indie1 = Songs.Songs("Tokyo", "e s c p", "Indie Pop", "songs/indie1.mp3")
+    indie2 = Songs.Songs("Steps On Clouds", "e s c p", "Indie Pop", "songs/indie2.mp3")
+    pop1 = Songs.Songs("Popsicle", "Johny Grimes", "Pop", "songs/pop1.mp3")
 
     # add all the classical songs to song list
     songs.append(classical1)
